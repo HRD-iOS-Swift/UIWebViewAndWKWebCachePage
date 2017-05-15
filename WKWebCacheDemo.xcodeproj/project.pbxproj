@@ -8,22 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		6F9FC6841EC8D846004681C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9FC6831EC8D846004681C2 /* AppDelegate.swift */; };
-		6F9FC6861EC8D846004681C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9FC6851EC8D846004681C2 /* ViewController.swift */; };
 		6F9FC6891EC8D846004681C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9FC6871EC8D846004681C2 /* Main.storyboard */; };
 		6F9FC68C1EC8D846004681C2 /* WKWebCacheDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F9FC68A1EC8D846004681C2 /* WKWebCacheDemo.xcdatamodeld */; };
 		6F9FC68E1EC8D846004681C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9FC68D1EC8D846004681C2 /* Assets.xcassets */; };
 		6F9FC6911EC8D846004681C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9FC68F1EC8D846004681C2 /* LaunchScreen.storyboard */; };
+		6F9FC6991EC8D982004681C2 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9FC6981EC8D982004681C2 /* BrowserViewController.swift */; };
+		6F9FC69B1EC8DA91004681C2 /* MyURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9FC69A1EC8DA91004681C2 /* MyURLProtocol.swift */; };
+		6F9FC69E1EC8E0E2004681C2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9FC69D1EC8E0E2004681C2 /* WebKit.framework */; };
+		8096B4FD69056E6C9AF31926 /* Pods_WKWebCacheDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D77A9CB0B2A342A5B404CF /* Pods_WKWebCacheDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60D77A9CB0B2A342A5B404CF /* Pods_WKWebCacheDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WKWebCacheDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9FC6801EC8D846004681C2 /* WKWebCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9FC6831EC8D846004681C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F9FC6851EC8D846004681C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F9FC6881EC8D846004681C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F9FC68B1EC8D846004681C2 /* WKWebCacheDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WKWebCacheDemo.xcdatamodel; sourceTree = "<group>"; };
 		6F9FC68D1EC8D846004681C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F9FC6901EC8D846004681C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F9FC6921EC8D846004681C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F9FC6981EC8D982004681C2 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		6F9FC69A1EC8DA91004681C2 /* MyURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyURLProtocol.swift; sourceTree = "<group>"; };
+		6F9FC69D1EC8E0E2004681C2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6F9FC69F1EC8E3CB004681C2 /* WKWebCacheDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebCacheDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C0AF05F0F97F0413BA79AE88 /* Pods-WKWebCacheDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebCacheDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebCacheDemo/Pods-WKWebCacheDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CCA918632B8EB79F541DAC2A /* Pods-WKWebCacheDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebCacheDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebCacheDemo/Pods-WKWebCacheDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F9FC69E1EC8E0E2004681C2 /* WebKit.framework in Frameworks */,
+				8096B4FD69056E6C9AF31926 /* Pods_WKWebCacheDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				6F9FC6821EC8D846004681C2 /* WKWebCacheDemo */,
 				6F9FC6811EC8D846004681C2 /* Products */,
+				6F9FC69C1EC8E0E2004681C2 /* Frameworks */,
+				D5786C38444D3996FE0392C9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +70,34 @@
 			isa = PBXGroup;
 			children = (
 				6F9FC6831EC8D846004681C2 /* AppDelegate.swift */,
-				6F9FC6851EC8D846004681C2 /* ViewController.swift */,
 				6F9FC6871EC8D846004681C2 /* Main.storyboard */,
+				6F9FC6981EC8D982004681C2 /* BrowserViewController.swift */,
+				6F9FC69A1EC8DA91004681C2 /* MyURLProtocol.swift */,
 				6F9FC68D1EC8D846004681C2 /* Assets.xcassets */,
 				6F9FC68F1EC8D846004681C2 /* LaunchScreen.storyboard */,
 				6F9FC6921EC8D846004681C2 /* Info.plist */,
 				6F9FC68A1EC8D846004681C2 /* WKWebCacheDemo.xcdatamodeld */,
+				6F9FC69F1EC8E3CB004681C2 /* WKWebCacheDemo-Bridging-Header.h */,
 			);
 			path = WKWebCacheDemo;
+			sourceTree = "<group>";
+		};
+		6F9FC69C1EC8E0E2004681C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F9FC69D1EC8E0E2004681C2 /* WebKit.framework */,
+				60D77A9CB0B2A342A5B404CF /* Pods_WKWebCacheDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5786C38444D3996FE0392C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCA918632B8EB79F541DAC2A /* Pods-WKWebCacheDemo.debug.xcconfig */,
+				C0AF05F0F97F0413BA79AE88 /* Pods-WKWebCacheDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F9FC6951EC8D846004681C2 /* Build configuration list for PBXNativeTarget "WKWebCacheDemo" */;
 			buildPhases = (
+				C65936C95AF8C908001A9A9B /* [CP] Check Pods Manifest.lock */,
 				6F9FC67C1EC8D846004681C2 /* Sources */,
 				6F9FC67D1EC8D846004681C2 /* Frameworks */,
 				6F9FC67E1EC8D846004681C2 /* Resources */,
+				E2D9070B2A093CED6169B76B /* [CP] Embed Pods Frameworks */,
+				A27DE99614352DBCF291EC1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +135,7 @@
 				TargetAttributes = {
 					6F9FC67F1EC8D846004681C2 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,12 +171,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A27DE99614352DBCF291EC1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKWebCacheDemo/Pods-WKWebCacheDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C65936C95AF8C908001A9A9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D9070B2A093CED6169B76B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKWebCacheDemo/Pods-WKWebCacheDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F9FC67C1EC8D846004681C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9FC6861EC8D846004681C2 /* ViewController.swift in Sources */,
+				6F9FC6991EC8D982004681C2 /* BrowserViewController.swift in Sources */,
+				6F9FC69B1EC8DA91004681C2 /* MyURLProtocol.swift in Sources */,
 				6F9FC6841EC8D846004681C2 /* AppDelegate.swift in Sources */,
 				6F9FC68C1EC8D846004681C2 /* WKWebCacheDemo.xcdatamodeld in Sources */,
 			);
@@ -264,25 +350,36 @@
 		};
 		6F9FC6961EC8D846004681C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA918632B8EB79F541DAC2A /* Pods-WKWebCacheDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WKWebCacheDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angkode.WKWebCacheDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WKWebCacheDemo/WKWebCacheDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6F9FC6971EC8D846004681C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AF05F0F97F0413BA79AE88 /* Pods-WKWebCacheDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WKWebCacheDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angkode.WKWebCacheDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WKWebCacheDemo/WKWebCacheDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -305,6 +402,7 @@
 				6F9FC6971EC8D846004681C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
