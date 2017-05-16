@@ -30,7 +30,7 @@ class BrowserViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
-        self.wk()
+        self.sendRequest()
         
         return true
     }
@@ -53,9 +53,9 @@ class BrowserViewController: UIViewController, UITextFieldDelegate {
             // init and load request in webview.
             let request = URLRequest(url: url)
             let webViewSize = CGRect(x: 0,
-                                     y: 0,
+                                     y: 50,
                                      width: self.view.frame.size.width,
-                                     height: self.view.frame.size.height)
+                                     height: self.view.frame.size.height - self.webView.frame.size.height)
             wkWebView = WKWebView(frame: webViewSize)
             wkWebView.navigationDelegate = self
             wkWebView.load(request)

@@ -33,12 +33,12 @@ class MyURLProtocol: URLProtocol {
         return request
     }
     
-    override class func requestIsCacheEquivalent(_ a: URLRequest, to b: URLRequest) -> Bool{
-        return super.requestIsCacheEquivalent(a, to: b)
+    override class func requestIsCacheEquivalent(_ aRequest: URLRequest,
+                                                 to bRequest: URLRequest) -> Bool {
+        return super.requestIsCacheEquivalent(aRequest, to:bRequest)
     }
     
-    override func startLoading(){
-        
+    override func startLoading() {
         // 1
         let possibleCachedResponse = self.cachedResponseForCurrentRequest()
         if let cachedResponse = possibleCachedResponse {
@@ -59,9 +59,9 @@ class MyURLProtocol: URLProtocol {
         } else {
             // 5
             print("Serving response from NSURLConnection")
+            
             let newRequest = (self.request as NSURLRequest).mutableCopy() as! NSMutableURLRequest
             URLProtocol.setProperty(true, forKey: "MyURLProtocolHandledKey", in: newRequest)
-            
             self.connection = NSURLConnection(request: newRequest as URLRequest, delegate: self)
         }
     }
@@ -105,8 +105,8 @@ class MyURLProtocol: URLProtocol {
         let cachedResponse = NSEntityDescription.insertNewObject(forEntityName: "CachedURLResponse", into: context) as NSManagedObject
         
         cachedResponse.setValue(self.mutableData, forKey: "data")
-        cachedResponse.setValue(self.request.url?.absoluteString, forKey: "url")
-        cachedResponse.setValue(NSDate(), forKey: "timestamp")
+        cachedResponse.setValue(self.request.url!.absoluteString, forKey: "url")
+        cachedResponse.setValue(Date(), forKey: "timestamp")
         cachedResponse.setValue(self.response.mimeType, forKey: "mimeType")
         cachedResponse.setValue(self.response.textEncodingName, forKey: "encoding")
         
@@ -117,6 +117,7 @@ class MyURLProtocol: URLProtocol {
         }catch let e {
             print("\(e)")
         }
+        
     }
     
     func cachedResponseForCurrentRequest() -> NSManagedObject? {
@@ -152,6 +153,5 @@ class MyURLProtocol: URLProtocol {
         
         return nil
     }
-
     
 }
